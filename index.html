@@ -16,16 +16,26 @@ body{
     text-align: center;
     width: 50%;
     height: 100%;
-    background: url("https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     right: 0px;
     position: fixed;
+    font-size: 25px;
 }
 #content-left{
     width: 50%;
     height: 100%;
-    background: url("https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     left: 0px;
     position: fixed;
+    text-align: center;
+    font-size: 25px;
+    
+}
+img{
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    margin-top: 25%;
 }
 </style>
 </head>
@@ -35,9 +45,11 @@ body{
   
 </div>
 <div id="content-right">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/English_language.svg/800px-English_language.svg.png" /></br>
     Projects - English
 </div>
 <div id="content-left" onclick="location.replace('projects.html')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png" /></br>
     Projects - Deutsch
 </div>
 </body>
