@@ -5,6 +5,15 @@
 <title>Open Webdesign Germany - Official Homepage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6LcvQfcUAAAAAPMgKalD9PgkReKOT-9OrbRtw3ot', {action: 'homepage'}).then(function(token) {
+       ...
+    });
+});
+</script>
+
 <style>
 body{
     background-color: black;
