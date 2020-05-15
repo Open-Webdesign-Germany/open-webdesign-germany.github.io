@@ -3,24 +3,57 @@
 <head>
 <title>Open Webdesign Germany - Projects</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)) , url("https://images.pexels.com/photos/745365/pexels-photo-745365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
+    background-color: black;
     color: white;
+    
     font-family: monospace;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 25%;
+    margin: 0px;
 }
 
+#content-right{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    right: 0px;
+    position: fixed;
+    font-size: 25px;
+}
+#content-left{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    left: 0px;
+    position: fixed;
+    text-align: center;
+    font-size: 25px;
+    
+}
+img{
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    margin-top: 25%;
+}
 </style>
 </head>
 <body>
-
-    This page doesn't exist</br>
-    We hope we are able to fix this problem quick.</br>
-    
-
+<div class="w3-container">
+    <div class="w3-panel w3-blue" style="text-align: center;">
+       
+      </div>
+      
+</div>
+<div id="content-right">
+   <img src="logo.jpg"/></br>
+    Scoalkrant App
+</div>
+<div id="content-left" onclick="location.replace('https://ow-dg.github.io/Scoalkrant')" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png" /></br>
+   Projectpage - English
+</div>
 </body>
 </html> 
