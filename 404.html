@@ -50,6 +50,45 @@ body, html {
  
 }
 canvas { background: rgba(0,0,0, 0) }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,1); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  rgba(0,0,0,0.4);
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #eee;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #eee;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+ 
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -58,8 +97,36 @@ canvas { background: rgba(0,0,0, 0) }
 
 <div class="bg-text">
   
+  <script>
 
+    
+   
+    
+    
+  
+    </script>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Game Over!</p>
+  </div>
+
+</div>
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <p>You won!</p>
+  </div>
+
+</div>
+<audio autoplay loop>
+  <source src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Kevin_MacLeod_-_Horroriffic.ogg">
+</audio>
 <h1>
   <a href="" class="typewrite" data-period="2000" data-type='[ "An error occured.", "The requested page doesn&#8217;t exist.", "Try to go back to the homepage.", "Maybe check the URL.", "Maybe you want to play the game below..." ]'>
     <span class="wrap"></span>
@@ -69,6 +136,20 @@ canvas { background: rgba(0,0,0, 0) }
 <canvas id="myCanvas" width="480" height="320"></canvas>
 </div>
 <script>
+   var modal = document.getElementById("myModal")
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      document.getElementById("myModal").style.display = "none";
+      location.reload();
+    };
+    var modal2 = document.getElementById("myModal2")
+    var span2 = document.getElementsByClassName("close2")[0];
+    span2.onclick = function() {
+      document.getElementById("myModal2").style.display = "none";
+      location.reload();
+    };
+
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -193,8 +274,8 @@ function collisionDetection() {
          
           score++;
           if(score == brickRowCount*brickColumnCount) {
-           alert("You won...");
-            document.location.reload();
+           modal2.style.display = "block";
+        
             clearInterval(interval); // Needed for Chrome to end game
           }
         }
@@ -234,6 +315,7 @@ function drawBricks() {
     }
   }
 }
+
 function drawScore() {
   ctx.font = "16px Arial";
   ctx.fillStyle = "white";
@@ -259,8 +341,8 @@ function draw() {
       dy = -dy;
     }
     else {
-      alert("You losed...");
-      document.location.reload();
+      modal.style.display = "block";
+     
       clearInterval(interval); // Needed for Chrome to end game
     }
   }
@@ -276,5 +358,6 @@ function draw() {
   y += dy;
 }
 
+   
 var interval = setInterval(draw, 10);
 </script>
