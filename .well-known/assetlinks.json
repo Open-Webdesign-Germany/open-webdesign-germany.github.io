@@ -1,9 +1,0 @@
-[{
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "org.openwebdesigngermany.scoalkrant",
-      "sha256_cert_fingerprints":
-      ["88:2A:83:BC:A5:8F:59:C0:52:0F:78:6B:18:29:A6:B7:D9:A5:BC:77:8E:28:14:14:0C:75:E5:2A:18:A8:62:72"]
-    }
-  }]
