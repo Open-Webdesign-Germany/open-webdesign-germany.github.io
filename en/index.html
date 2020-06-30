@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+      
+           
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "6d1d13e2-bece-4aa7-a5c6-5869c991615e",
+    });
+  });
+</script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139193886-11"></script>
 <script>
@@ -182,5 +192,16 @@
 </br>
     Open Webdesign Germany - 2020
     </div>
+     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+          
+            <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+          
+            <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+          
+            <!-- Add Firebase products that you want to use -->
+            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
     </body>
 </html>
