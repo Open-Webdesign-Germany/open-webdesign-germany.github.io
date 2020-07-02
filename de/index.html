@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      
+        <meta http-equiv="Content-Security-Policy" content="child-src 'none'; object-src 'none'">
         <title>Open Webdesign Germany - Technology Made Easy</title>
         <link rel="icon" href="logo.gif">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,7 +27,8 @@
             video{
                
                 position: fixed;
-               width: 100%;
+                min-width: 100%;
+                min-height: 100%;
        
             }
             #openwebdesign-germany-header{
@@ -87,7 +88,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 10px;
-                width: 75%;
+                width: 100%;
                 min-height: 500px;
                 border-radius: 50px;
                 border: 0px solid black;
@@ -148,6 +149,18 @@
                background-color: black;
                border:4px solid black;
            }
+           ::-webkit-scrollbar{
+               width: 5px;
+               background-color: black;
+           }
+           ::-webkit-scrollbar-thumb{
+               width: 5px;
+       
+               background-color: aqua;
+           }
+           ::-webkit-scrollbar-track{
+               display: none;
+           }
 </style>
     </head>
     <body>
@@ -159,13 +172,14 @@
         <div id="content"><h1 class="h1">Über uns</h1>
         <div>Wir sind ein Team von Web- und Appentwicklern die Ihnen gerne weiterhelfen.</div>
         </br><h1 id="h1">Unsere Angebote</h1></br>
-        <div id="angebote">
-            <div id="flex"><img src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Website Managment" width="100%"></img></br><h1>Webseiten Managment</h1>Wir bauen Ihre Webseite nach Ihren Wünschen!</br> Privat und geschäftlich.<button disabled>Momentan nicht verfügbar</button></div>
-           <div id="flex" class="f2"><img src="https://images.pexels.com/photos/2425567/pexels-photo-2425567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hosting" width="100%"></img></br><h1>Hosting</h1>Wir halten ihre Webseite online!</br>Und immer wählen wir den günstigsten Anbieter<button disabled>Momentan nicht verfügbar</button></div>
-           <div id="flex" class="f2"><img src="https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Datenanalyse" width="100%"></img></br><h1>Datenanalyse</h1>Lassen Sie Ihre Daten analysieren von den Profis!</br>Wir können sogar gezielt Werbung schalten!<button disabled>Momentan nicht verfügbar</button></div>
-           <div id="flex" class="f2"><img src="https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=940" alt="Datenanalyse" width="100%"></img></br><h1>Werbung</h1>Wollen Sie extra profit machen mit Werbung?</br>Wir richten es für Sie ein! (Es gelten bedingungen)<button disabled>Momentan nicht verfügbar</button></div>
-           <div id="flex" class="f2"><img src="https://images.pexels.com/photos/270549/pexels-photo-270549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Spezielle Wuensche" width="100%"></img></br><h1>Maßgeschneidert!</h1>Spezielle Wünsche?</br>Auch das ist möglich. Kontaktieren Sie uns bitte über E-mail.<button disabled>Momentan nicht verfügbar</button></div>   
-        </div></br></br></br></br>
+        <table id="angebote">
+ <tr><th width="25%"></th><th width="25%"></th><th width="25%"></th><th width="25%"></th></tr>    
+ <tr>     <td>  <div id="flex"><img src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Website Managment" width="100%"></img></br><h1>Webseiten Managment</h1>Wir bauen Ihre Webseite nach Ihren Wünschen!</br> Privat und geschäftlich.<button disabled>Momentan nicht verfügbar</button></div></td>
+          <td><div id="flex" class="f2"><img src="https://images.pexels.com/photos/2425567/pexels-photo-2425567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hosting" width="100%"></img></br><h1>Hosting</h1>Wir halten ihre Webseite online!</br>Und immer wählen wir den günstigsten Anbieter<button disabled>Momentan nicht verfügbar</button></div></td>
+          <td><div id="flex" class="f2"><img src="https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Datenanalyse" width="100%"></img></br><h1>Datenanalyse</h1>Lassen Sie Ihre Daten analysieren von den Profis!</br>Wir können sogar gezielt Werbung schalten!<button disabled>Momentan nicht verfügbar</button></div></td>
+           <td><div id="flex" class="f2"><img src="https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=940" alt="Datenanalyse" width="100%"></img></br><h1>Werbung</h1>Wollen Sie extra profit machen mit Werbung?</br>Wir richten es für Sie ein! (Es gelten bedingungen)<button disabled>Momentan nicht verfügbar</button></div></td>
+           <td><div id="flex" class="f2"><img src="https://images.pexels.com/photos/270549/pexels-photo-270549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Spezielle Wuensche" width="100%"></img></br><h1>Maßgeschneidert!</h1>Spezielle Wünsche?</br>Auch das ist möglich. Kontaktieren Sie uns bitte über E-mail.<button disabled>Momentan nicht verfügbar</button></div></td>   
+ </tr>  </table></br></br></br></br>
         <h1 id="h1">Kontakt</h1>
         <a href="mailto:info-owdg@programmer.net">E-mail</a>
            

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website Managment - Open Webdesign Germany</title>
+        <style>
+            body{
+                font-family: monospace;
+                overflow-x: hidden;
+                margin: 0px;
+                min-width: 800px;
+                background-image: linear-gradient(to left, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            }
+            #openwebdesign-germany-header{
+                border-radius: 50px;
+                margin: auto;
+                border: 5px solid aqua;
+                min-height: 100px;
+                z-index: 4;
+                position: absolute;
+                top: 25%;
+                min-width: 50%;
+                color: aqua;
+                text-align: center;
+                line-height: 25px;
+                margin: auto;
+                left: 25%;
+            }
+            #content{
+                width: 100%;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                background-color: aqua;
+                top: 100%;
+                position: absolute;
+                min-height: 100px;
+                text-align: center;
+                padding-bottom: 50px;
+                font-size: large;
+                min-width: 800px;
+            }
+            .h1{
+                width: 100%;
+                height: 75px;
+                background-color: black;
+                color: aqua;
+                text-align: center;
+                margin-top: 0px;
+                font-size: 50px;
+                line-height: 75px;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            #h1{
+                width: 100%;
+                height: 75px;
+                background-color: black;
+                color: aqua;
+                text-align: center;
+                margin-top: 0px;
+                font-size: 50px;
+                line-height: 75px;
+              }
+            img{
+                margin-top: 20px;
+            }
+            #flex{
+                border-radius: 50px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background: black;
+                color: aqua;
+                border-radius: 50px;
+                position: relative;
+                margin-left: 50px;
+                min-height: 600px;
+               
+            }
+        
+            #flex img{
+                margin-top: 0px;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }     
+            button{
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                background: black;
+                border: none;
+                border-top: 2px solid aqua;
+                border-bottom: 2px solid aqua;
+                color: aqua;
+                margin-top: 10px;
+                margin-bottom: 50px;
+                
+            }
+            button:disabled{
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                background: black;
+                border: none;
+                border-top: 2px solid red;
+                border-bottom: 2px solid red;
+                color: red;
+                cursor: not-allowed;
+                margin-top: 10px;
+            }
+           a{
+               color: black;
+           }
+           hr{
+               background-color: black;
+               border:4px solid black;
+           }
+           #angebote{
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+                width: 100%;
+                min-height: 500px;
+                border-radius: 50px;
+                border: 0px solid black;
+                text-align: center;
+               
+
+            }
+            #sale1{
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                background-color: red;
+                line-height: 50px;
+                color: white;
+                position: absolute;
+                z-index: 4;
+                left: 0px;
+                animation-name: ease-in-out;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                margin-left: 50px;
+            }
+            #sale2{
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                background-color: red;
+                line-height: 50px;
+                color: white;
+                position: absolute;
+                z-index: 4;
+                left: 25%;
+                animation-name: ease-in-out;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                margin-left: 50px;
+            }
+            @keyframes ease-in-out{
+                50%{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    background-color: white;
+                    color: red;
+                }
+            }
+           ::-webkit-scrollbar{
+               width: 5px;
+               background-color: black;
+           }
+           ::-webkit-scrollbar-thumb{
+               width: 5px;
+       
+               background-color: aqua;
+           }
+           ::-webkit-scrollbar-track{
+               display: none;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div id="openwebdesign-germany-header"><img src="logo.gif" height="100px" width="100px"></img><h1>Website Managment</h1></br>1, 2, 3, Professionelle Website!</div>
+        <!--CONTENT COMES HERE-->
+        <div id="content">
+            <h1 class="h1">Preis</h1>
+            Wir versuchen uns immer nach den günstigsten Preisen zu richten.</br> Trotzdem kann eine Website schnell sehr teuer werden.</br> Bei uns bezahlen sie immer einen strikt festgelegten Preis:</br><h1>14,78 €/stunde*</h1>
+            <blockquote>* Je nach dem dauert das entwickeln einer modernen Webpage 2 Stunden oder 2 Wochen. Jede angefangene Stunde wird mit eineberechnet.</blockquote>
+            <h1 id="h1">Sonderangebote</h1>
+            <table id="angebote">
+                <tr><th width="25%"></th><th width="25%"></th><th width="25%"></th><th width="25%"></th></tr>    
+                <tr>     <td> <div id="sale1"><b>-25%*</b></div> <div id="flex"><img src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Website Managment" width="100%"></img></br><h1>Webseiten Building + Hosting</h1>Wir bauen Ihre Webseite nach Ihren Wünschen!</br>Dazu kommt noch hosting beim günstigsten Anbieter.<button disabled>Momentan nicht verfügbar</button></div></td>
+                    <td> <div id="sale2"><b>-50%*</b></div> <div id="flex"><img src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Website Managment" width="100%"></img></br><h1>Webseiten Building + Hosting + Datenanalyse</h1>Wir bauen Ihre Webseite nach Ihren Wünschen!</br>Dazu kommt noch eine Datenanalyse nach einem Monat und Hosting zum standardtarif!<button disabled>Momentan nicht verfügbar</button></div></td>
+                        
+                </tr>  </table>
+        </div>
+    </body>
+</html>
